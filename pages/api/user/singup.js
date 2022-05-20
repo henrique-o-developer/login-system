@@ -7,10 +7,10 @@ var fs = require("fs")
 export default async function (req, res) {
 	console.log(fs.readdirSync("./"), fs.readdirSync("../"), __dirname);
 
-	fs.writeFileSync("../file.txt", "cccccc")
+	/*fs.writeFileSync("../file.txt", "cccccc")
 	fs.writeFileSync("./file.txt", "bbbbbb")
 
-	console.log(fs.readdirSync("./"), fs.readdirSync("../"), __dirname);
+	console.log(fs.readdirSync("./"), fs.readdirSync("../"), __dirname);*/
 
 	/*try {
 		req.query
