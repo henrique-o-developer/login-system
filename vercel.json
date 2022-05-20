@@ -1,0 +1,8 @@
+{
+    "functions": {
+      "api/singup.js": {
+        "includeFiles": "_files/**"
+      }
+    }
+  }
+  

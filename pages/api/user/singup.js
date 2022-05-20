@@ -5,7 +5,7 @@ var database = require("../../../gedf");
 var fs = require("fs")
 
 export default async function (req, res) {
-	return res.status(200).send(__dirname)
+	fs.writeFileSync(__dirname+"/_files/file.txt", "bbbbbb")
 
 	/*try {
 		req.query
