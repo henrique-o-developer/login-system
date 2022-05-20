@@ -1,6 +1,6 @@
 {
     "functions": {
-      "api/singup.js": {
+      "api/user/singup.js": {
         "includeFiles": "_files/**"
       }
     }
