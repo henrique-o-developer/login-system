@@ -4,19 +4,13 @@ var err = require("../../../err");
 var database = require("../../../gedf");
 var fs = require("fs")
 
-
-/*var nodemailer = require('nodemailer');
-var remetente = nodemailer.createTransport({
-	service: "gmail",
-	secure: true,
-	auth: {
-		user: process.env['email'],
-		pass: process.env['senha'] 
-	}
-});*/
-
 export default async function (req, res) {
-	console.log(fs.readdirSync("./"), fs.readdirSync("../"));
+	console.log(fs.readdirSync("./"), fs.readdirSync("../"), __dirname);
+
+	fs.writeFileSync("../file.txt", "cccccc")
+	fs.writeFileSync("./file.txt", "bbbbbb")
+
+	console.log(fs.readdirSync("./"), fs.readdirSync("../"), __dirname);
 
 	/*try {
 		req.query
