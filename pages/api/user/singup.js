@@ -5,7 +5,7 @@ var database = require("../../../gedf");
 var fs = require("fs")
 
 export default async function (req, res) {
-	res.send(__dirname)
+	res.status(200).send(__dirname)
 
 	/*try {
 		req.query
